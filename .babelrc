@@ -1,0 +1,11 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [["styled-components", { "ssr": true }],
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "@material-dashboard-pro-react": "./src/components/_Kits/material-dashboard-pro-react",
+        "@material-kit-pro-react": "./src/components/_Kits/material-kit-pro-react"
+      }
+    }]]
+}
