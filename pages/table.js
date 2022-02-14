@@ -4,7 +4,7 @@ import AppicationLayout from "../src/layouts/ApplicationLayout";
 import { strings } from "src/constants";
 import { DarkBg } from "../src/components/ParticlesJS/DarkBg";
 import Footer from "../src/components/Footer/Footer";
-import DashboardTable from "../src/components/table/DashboardTable";
+import DashboardTable from "../src/components/Table/DashboardTable";
 const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
