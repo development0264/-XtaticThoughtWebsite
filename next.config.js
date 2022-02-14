@@ -39,14 +39,14 @@ module.exports = {
         }
     },
     ...withImages(),
-    webpack: (config, { isServer }) => {
-        // Fixes npm packages that depend on `fs` module
-        if (!isServer) {
-            config.node = {
-                fs: "empty"
-            };
-        }
-        return config;
-    },
+        webpack: (config, { isServer }) => {
+            if (!isServer) {
+                // don't resolve 'fs' module on the client to prevent this error on build --> Error: Can't resolve 'fs'
+                config.resolve.fallback = {
+                    fs: false
+                }
+            }
+            return config;
+        },
     env: envProps
 };
