@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppicationLayout from "../src/layouts/ApplicationLayout";
-import ImmersiveMarketNewsList from "../src/components/dashboard/ImmersiveMarketNews";
-import XRSocialMedia from "../src/components/dashboard/XRSocialMedia";
+import ImmersiveMarketNewsList from "../src/components/Dashboard/ImmersiveMarketNews";
+import XRSocialMedia from "../src/components/Dashboard/XRSocialMedia";
 import { strings } from "src/constants";
 import { DarkBg } from "../src/components/ParticlesJS/DarkBg";
 import Footer from "../src/components/Footer/Footer";
 import { Dashboard } from "@material-ui/icons";
-import DashboardChart from "../src/components/dashboard/dashboardChart";
+import DashboardChart from "../src/components/Dashboard/DashboardChart";
 const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
