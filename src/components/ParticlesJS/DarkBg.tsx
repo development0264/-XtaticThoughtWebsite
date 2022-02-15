@@ -20,6 +20,7 @@ const useStyles = makeStyles(() => ({
         height: "226px",
         borderRadius: "50%",
         transform: "translate(-50%, -50%)",
+        border: "2px solid #000",
         background: "linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 4.39%, rgba(0, 0, 0, 0.539617) 61.02%, #000000 100%), linear-gradient(268.84deg, #40FF00 -7.46%, #16FFA8 49.66%, #00FFFF 110.11%)",
         '@media (max-width: 899px)': {
             width: "120px",

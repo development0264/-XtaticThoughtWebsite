@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-
+import Link from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
 import {
     mrAuto,
@@ -215,8 +215,8 @@ function DashboardChart(props) {
                     <div className={classes.tableGraphHeader} data-aos="fade-down" data-aos-duration="1000">
                         <div className={classes.tableGraphHeaderTop}>
                             <div className={classes.tableGraphPage}>
-                                <a href="#" className={classes.pageInactive}>Table</a>
-                                <a href="#" className={classes.pageActive}>Graph</a>
+                                <Link href="/table"><a className={classes.pageInactive}>Table</a></Link>
+                                <Link href="/dashboard"><a className={classes.pageActive}>Graph</a></Link>
                             </div>
                             <div className={classes.tableGraphDropdownOuter}>
                                 <div className={classes.tableGraphDropdownBox}>

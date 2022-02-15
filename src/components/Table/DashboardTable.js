@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import classNames from "classnames";
 import ToggleButton from "@material-ui/lab/ToggleButton";
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup'
-
+import Link from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
 import {
     Grid,
@@ -26,11 +26,9 @@ const teamStyle = (theme) => ({
             paddingBottom: "80px",
         },
         '@media (max-width: 767px)': {
-            paddingTop: "80px",
             paddingBottom: "60px",
         },
         '@media (max-width: 575px)': {
-            paddingTop: "40px",
             paddingBottom: "40px",
         },
     },
@@ -300,8 +298,8 @@ function DashboardTable(props) {
                     <div className={classes.tableGraphHeader} data-aos="fade-down" data-aos-duration="1000">
                         <div className={classes.tableGraphHeaderTop} >
                             <div className={classes.tableGraphPage}>
-                                <a href="#" className={classes.pageActive}>Table</a>
-                                <a href="#" className={classes.pageInactive}>Graph</a>
+                                <Link href="/table"><a className={classes.pageActive}>Table</a></Link>
+                                <Link href="/dashboard"><a className={classes.pageInactive}>Graph</a></Link>
                             </div>
                             <div className={classes.tableGraphDropdownOuter}>
                                 <label className={classes.tableGraphDropdownLabel}>Sort by</label>

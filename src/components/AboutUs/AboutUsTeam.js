@@ -40,6 +40,7 @@ const teamStyle = (theme) => ({
         borderRadius: "0",
         position: "relative",
         background: "#000000",
+        height: "100%",
         "& .animatedShapeBg": {
             position: "absolute",
             top: "0",

@@ -41,9 +41,10 @@ const contactStyle = (theme) => ({
     },
     contactUsingBoxInner: {
         position: "relative",
-        padding: "30px 50px 124px 50px",
+        padding: "30px 50px 30px 50px",
+        minHeight: "197px",
         '@media (max-width: 1199px)': {
-            padding: "20px 50px 124px 30px",
+            padding: "20px 50px 20px 30px",
         },
         "& h4": {
             margin: 0,

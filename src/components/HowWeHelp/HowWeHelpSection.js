@@ -273,6 +273,7 @@ const teamStyle = (theme) => ({
     alignItems: "center",
     justifyContent: "flex-start",
     marginBottom: "70px",
+    overflow: "hidden",
     background: "#000000",
     '@media (max-width: 991px)': {
       minHeight: "auto",
