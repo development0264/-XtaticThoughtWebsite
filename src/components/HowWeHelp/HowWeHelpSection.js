@@ -228,7 +228,13 @@ const teamStyle = (theme) => ({
       textTransform: "uppercase",
       fontWeight: "300",
       cursor: "pointer",
-      '@media (max-width: 1199px)': {
+      '&:hover': {
+        background: "-webkit-linear-gradient(230deg,  #40FF00, #00FFFF)",
+        "-webkit-background-clip": "text",
+        "-webkit-text-fill-color": "transparent",
+        fontWeight: "500",
+      },
+      '@media (max-width: 1360px)': {
         fontSize: "20px",
       },
       '@media (max-width: 991px)': {
@@ -237,14 +243,14 @@ const teamStyle = (theme) => ({
       "& img": {
         marginLeft: "10px",
         display: "none",
-        '@media (max-width: 1199px)': {
+        '@media (max-width: 1360px)': {
           width: "15px",
         },
       },
     },
     "& li + li": {
       marginTop: "40px",
-      '@media (max-width: 1199px)': {
+      '@media (max-width: 1360px)': {
         marginTop: "20px",
       },
       '@media (max-width: 575px)': {
