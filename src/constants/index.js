@@ -33,6 +33,68 @@ export const strings = {
     "Additional Text about the services, maybe a brief decription",
     "about 2 lines long, figure out the centering",
   ],
+  // HOW_WE_HELP_OPTIONS1: "1 / skill tree",
+  // HOW_WE_HELP_OPTIONS2: "2 / XR Authenticate",
+  // HOW_WE_HELP_OPTIONS3: "3 / xr analytics",
+  // HOW_WE_HELP_OPTIONS4: "4 / Art Services",
+  // HOW_WE_HELP_OPTIONS5: "5 / intelligence",
+  // HOW_WE_HELP_OPTIONS6: "6 / immersive experiences",
+  HOW_WE_HELP_OPTIONS_MOBILE: [
+    {
+      id: 1,
+      name: "1 / skill tree",
+      heading: "1 / Skill Tree",
+      description:
+        "Customizable Knowledge services: optimize your opportunities, grow & expand skill sets, explore curiosities.",
+      image: "./images/service-1.png",
+      imagehtml: "<div class='servicesDetailImage-animation-one'><img class='one-part-one' src='./images/service-1-1.png'></img><img class='one-part-two' src='./images/service-1-2.png'></img><img class='one-part-three' src='./images/service-1-3.png'></img><img class='one-part-four' src='./images/service-1-4.png'></img></div>",
+    },
+    {
+      id: 2,
+      name: "2 / XR Authenticate",
+      heading: "2 / xr authenticate",
+      description:
+        "We personalize experiences, customize accounts, secure data cycles, achieve fast user login and seamless access & security.",
+      image: "./images/service-2.png",
+      imagehtml: "<div class='servicesDetailImage-animation-two'><img class='two-part-one' src='./images/service-2-1.png'></img><img class='two-part-two' src='./images/service-2-2.png'></img></div>",
+    },
+    {
+      id: 3,
+      name: "3 / xr analytics",
+      heading: "3 / xr analytics",
+      description:
+        "We carefully analyze your data to track event process, save user progress and improve user feedback.",
+      image: "./images/service-3.png",
+      imagehtml: "<div class='servicesDetailImage-animation-three'><img class='three-part-one' src='./images/service-3-1.png'></img><img class='three-part-two' src='./images/service-3-2.png'></img><img class='three-part-three' src='./images/service-3-3.png'></img></div>",
+    },
+    {
+      id: 4,
+      name: "4 / Art Services",
+      heading: "4 / Art Services",
+      description:
+        "Our handcrafted art is produced by expertly-trained artists with tools in cutting edge medium. Our work molds and adapts to serve diverse market cultures.",
+      image: "./images/service-4.png",
+      imagehtml: "<div class='servicesDetailImage-animation-four'><img class='four-part-one' src='./images/service-4-1.png'></img><img class='four-part-two' src='./images/service-4-2.png'></img></div>",
+    },
+    {
+      id: 5,
+      name: "5 / intelligence",
+      heading: "5 / intelligence",
+      description:
+        "Infrastructure for content integration - includes Analytics, AI, ML, XRAuth. Our solution ranges on the full spectrum of demands.",
+      image: "./images/service-5.png",
+      imagehtml: "<div class='servicesDetailImage-animation-five'><img class='five-part-one' src='./images/service-5-1.png'></img></div>",
+    },
+    {
+      id: 6,
+      name: "6 / immersive experiences",
+      heading: "6 / immersive experiences",
+      description:
+        "Limitless utilizes immersive technology and machine learning to teach math and science. Our educational platform is dynamically customizable to each individual to best suit their learning style.",
+      image: "./images/service-6.png",
+      imagehtml: "<div class='servicesDetailImage-animation-six'><img class='six-part-one' src='./images/service-6-1.png'></img><img class='six-part-two' src='./images/service-6-2.png'></img></div>",
+    },
+  ],
   HOW_WE_HELP_OPTIONS: [
     { id: 1, name: "1 / skill tree", slug: "skill_tree" },
     {

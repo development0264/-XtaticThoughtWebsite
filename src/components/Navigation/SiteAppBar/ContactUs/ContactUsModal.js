@@ -71,17 +71,33 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
     // width: 400,
-    minWidth: 600,
+    maxWidth: 600,
     // backgroundColor: theme.palette.background.paper,
     backgroundColor: colors.black,
     // border: "2px solid #000",
     // boxShadow: theme.shadows[5],
     padding: theme.spacing(0, 2, 3),
+    width: "calc(100% - 40px)",
   },
   socialIcon: {
     width: 35,
   },
+  modelClose: {
+    cursor: "pointer",
+    position: "absolute",
+    right: "10px",
+    top: "10px",
+    padding: 0,
+    background: "transparent",
+    border: "none",
+    '& img': {
+      filter: "brightness(0) invert(1)",
+      width: "25px",
+    }
+  }
 }));
+
+
 
 export default function ContactUsModal(props) {
   const { isModalOpen, setModalVisibility } = props;
@@ -95,6 +111,7 @@ export default function ContactUsModal(props) {
 
   const body = (
     <div style={modalStyle} className={classNames(classes.paper)}>
+      <button className={classes.modelClose} onClick={handleClose}><img src="./images/close-icon.png"></img></button>
       <p style={styles.contactUsTextStyle}>{strings.CONTACT_US}</p>
 
       <p style={styles.learnMoreAboutHeading}>

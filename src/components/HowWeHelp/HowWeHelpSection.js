@@ -191,19 +191,23 @@ const teamStyle = (theme) => ({
       fontSize: "26px",
     },
   },
-  servicesRow: {
+  servicesRowDesktop: {
     alignItems: "center",
     justifyContent: "space-between",
+    '@media (max-width: 916px)': {
+      display: "none"
+    },
+  },
+  servicesRowMobile: {
+    display: "none",
+    '@media (max-width: 916px)': {
+      display: "block"
+    },
     '& > div': {
       '@media (max-width: 916px)': {
         width: "100%",
       },
     },
-    '& > div:first-child': {
-      '@media (max-width: 916px)': {
-        paddingBottom: 30
-      },
-    }
   },
   servicesOptions: {
     marginTop: "-127px",
@@ -239,6 +243,9 @@ const teamStyle = (theme) => ({
       },
       '@media (max-width: 991px)': {
         fontSize: "18px",
+      },
+      '@media (max-width: 916px)': {
+        marginBottom: "15px",
       },
       "& img": {
         marginLeft: "10px",
@@ -647,7 +654,42 @@ function HowWeHelp(props) {
         <Grid item xs={12}>
           <h2 className={classes.servicesTitle} data-aos="zoom-in" data-aos-duration="1000">Our services</h2>
         </Grid>
-        <Grid container className={classes.servicesRow}>
+        <Grid container className={classes.servicesRowMobile}>
+          <Grid item lg={12} md={12} data-aos="fade-up" data-aos-duration="1000">
+            {strings.HOW_WE_HELP_OPTIONS_MOBILE.map((item) => (
+              <>
+                <div className={classes.servicesOptions}>
+                  <h4>{item.name}</h4>
+                </div>
+                <div className={classes.servicesDetailSection}>
+                  <div className={classes.servicesDetailSectionInner}>
+                    <div className={classes.servicesDetailBox}>
+                      <div className={classes.servicesDetailImage}>
+                        <img src={item.image}></img>
+                        <div dangerouslySetInnerHTML={{ __html: item.imagehtml }} />
+                      </div>
+                      <h4 className={classes.servicesDetailTitle}>{item.heading}</h4>
+                      <p className={classes.servicesDetailText}>{item.description}</p>
+                    </div>
+                  </div>
+                  <img className="serviceBg" src="./images/service-bg.png"></img>
+                </div>
+              </>
+            ))}
+          </Grid>
+          <Grid item lg={12} md={12} data-aos="fade-up" data-aos-duration="1000">
+            <button data-aos="zoom-in" data-aos-duration="1000" className={classes.contactUsButton} onClick={() => {
+              setContactUsModalVisibility(true);
+            }}>Contact Us</button>
+            {isContactUsModalOpen && (
+              <ContactUsModal
+                isModalOpen={isContactUsModalOpen}
+                setModalVisibility={setContactUsModalVisibility}
+              />
+            )}
+          </Grid>
+        </Grid>
+        <Grid container className={classes.servicesRowDesktop}>
           <Grid item lg={4} md={4} data-aos="fade-right" data-aos-duration="1000">
             <div className={classes.servicesOptions}>
               <ul>
