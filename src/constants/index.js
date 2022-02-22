@@ -42,8 +42,8 @@ export const strings = {
   HOW_WE_HELP_OPTIONS_MOBILE: [
     {
       id: 1,
-      name: "1 / skill tree",
-      heading: "1 / Skill Tree",
+      name: "skill tree",
+      heading: "Skill Tree",
       description:
         "Customizable Knowledge services: optimize your opportunities, grow & expand skill sets, explore curiosities.",
       image: "./images/service-1.png",
@@ -51,17 +51,17 @@ export const strings = {
     },
     {
       id: 2,
-      name: "2 / XR Authenticate",
-      heading: "2 / xr authenticate",
+      name: "XR Authenticate",
+      heading: "xr authenticate",
       description:
-        "We personalize experiences, customize accounts, secure data cycles, achieve fast user login and seamless access & security.",
+        "Personalize experiences, customize accounts, secure data cycles, achieve fast user login and seamless access & security.",
       image: "./images/service-2.png",
       imagehtml: "<div class='servicesDetailImage-animation-two'><img class='two-part-one' src='./images/service-2-1.png'></img><img class='two-part-two' src='./images/service-2-2.png'></img></div>",
     },
     {
       id: 3,
-      name: "3 / xr analytics",
-      heading: "3 / xr analytics",
+      name: "xr analytics",
+      heading: "xr analytics",
       description:
         "We carefully analyze your data to track event process, save user progress and improve user feedback.",
       image: "./images/service-3.png",
@@ -69,8 +69,8 @@ export const strings = {
     },
     {
       id: 4,
-      name: "4 / Art Services",
-      heading: "4 / Art Services",
+      name: "Art Services",
+      heading: "Art Services",
       description:
         "Our handcrafted art is produced by expertly-trained artists with tools in cutting edge medium. Our work molds and adapts to serve diverse market cultures.",
       image: "./images/service-4.png",
@@ -78,8 +78,8 @@ export const strings = {
     },
     {
       id: 5,
-      name: "5 / intelligence",
-      heading: "5 / intelligence",
+      name: "intelligence",
+      heading: "intelligence",
       description:
         "Infrastructure for content integration - includes Analytics, AI, ML, XRAuth. Our solution ranges on the full spectrum of demands.",
       image: "./images/service-5.png",
@@ -87,8 +87,8 @@ export const strings = {
     },
     {
       id: 6,
-      name: "6 / immersive experiences",
-      heading: "6 / immersive experiences",
+      name: "immersive experiences",
+      heading: "immersive experiences",
       description:
         "Limitless utilizes immersive technology and machine learning to teach math and science. Our educational platform is dynamically customizable to each individual to best suit their learning style.",
       image: "./images/service-6.png",
@@ -137,7 +137,7 @@ export const strings = {
       {
         heading: "2 / xr authenticate",
         description:
-          "We personalize experiences, customize accounts, secure data cycles, achieve fast user login and seamless access & security.",
+          "Personalize experiences, customize accounts, secure data cycles, achieve fast user login and seamless access & security.",
         image: "./images/service-2.png",
         imagehtml: "<div class='servicesDetailImage-animation-two'><img class='two-part-one' src='./images/service-2-1.png'></img><img class='two-part-two' src='./images/service-2-2.png'></img></div>",
       },

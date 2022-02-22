@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 
@@ -9,6 +9,7 @@ import NextLinkNoStyle from "../../blocks/NextLinkNoStyle";
 import { strings } from "../../constants";
 import { connect } from "react-redux";
 import { setDarkMode } from "../../components/SiteState/state/actions";
+import XtaticLabModal from "../Navigation/SiteAppBar/XtaticLabModal";
 import {
   Grid,
   Container
@@ -195,6 +196,14 @@ const teamStyle = (theme) => ({
 const useStyles = makeStyles(teamStyle);
 
 function SectionTeam(props) {
+  const [isXtaticLabsModalOpen, setXtaticLabsModalVisibility] = useState(false);
+  const [state, setState] = useState({
+    mobileView: false,
+    drawerOpen: false,
+  });
+  const handleModalVisibility = (visibilityStatus) => {
+    setXtaticLabsModalVisibility(visibilityStatus);
+  };
   const classes = useStyles();
   return (
     <>
@@ -212,7 +221,7 @@ function SectionTeam(props) {
               <div className="animatedShapeRight"><img src="./images/contactusing-right.png" className={classes.animatedShapeRightImg}></img></div>
               <h4>Dashboard</h4>
               <img className="animatedShapeBg" src="./images/contactusing-bg.png"></img>
-              <a href="#" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
+              <a href="/dashboard" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
             </div>
           </div>
           <div className={classes.contactUsingBox}>
@@ -221,7 +230,7 @@ function SectionTeam(props) {
               <div className="animatedShapeRight"><img src="./images/contactusing-right.png" className={classes.animatedShapeRightImg}></img></div>
               <h4>Table</h4>
               <img className="animatedShapeBg" src="./images/contactusing-bg.png"></img>
-              <a href="#" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
+              <a href="/table" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
             </div>
           </div>
           <div className={classes.contactUsingBox} >
@@ -230,11 +239,20 @@ function SectionTeam(props) {
               <div className="animatedShapeRight"><img src="./images/contactusing-right.png" className={classes.animatedShapeRightImg}></img></div>
               <h4>Xtatic Labs</h4>
               <img className="animatedShapeBg" src="./images/contactusing-bg.png"></img>
-              <a href="#" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
+              <a href="javascript:void(0)" className={classes.redirectLink} onClick={() => {
+                setState((prevState) => ({ ...prevState, drawerOpen: false }));
+                handleModalVisibility(!isXtaticLabsModalOpen);
+              }}><img src="./images/right-down.png"></img></a>
             </div>
           </div>
         </div>
       </section >
+      {isXtaticLabsModalOpen && (
+        <XtaticLabModal
+          isModalOpen={isXtaticLabsModalOpen}
+          setModalVisibility={handleModalVisibility}
+        />
+      )}
     </>
   );
 }

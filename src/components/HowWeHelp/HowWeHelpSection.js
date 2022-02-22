@@ -165,6 +165,9 @@ const teamStyle = (theme) => ({
     '@media (max-width: 916px)': {
       paddingRight: 24,
     },
+    '@media (max-width: 599px)': {
+      paddingRight: 16,
+    },
   },
   servicesTitle: {
     marginBottom: "150px",
