@@ -245,6 +245,60 @@ const contactStyle = (theme) => ({
                 width: "100%",
             },
         },
+    },
+    footerContactUs: {
+        maxWidth: "350px",
+        paddingBottom: "30px",
+        "& input": {
+            padding: "10px 15px",
+            width: "100%",
+            background: "transparent",
+            borderRadius: "0",
+            border: "1px solid #fff",
+            boxShadow: "none",
+            resize: "none",
+            fontFamily: "Montserrat",
+            color: "#fff",
+            marginBottom: "15px",
+            lineHeight: "20px",
+        },
+        "& textarea": {
+            padding: "10px 15px",
+            width: "100%",
+            background: "transparent",
+            borderRadius: "0",
+            border: "1px solid #fff",
+            boxShadow: "none",
+            resize: "none",
+            fontFamily: "Montserrat",
+            color: "#fff",
+            marginBottom: "15px",
+            lineHeight: "20px",
+        },
+        "& input:focus": {
+            outline: "none",
+        },
+        "& textarea:focus": {
+            outline: "none",
+        },
+        "& input::placeholder": {
+            color: "#fff",
+        },
+        "& textarea::placeholder": {
+            color: "#fff",
+        },
+        "& button": {
+            color: "#000000",
+            border: "none",
+            cursor: "pointer",
+            padding: "3px 22px",
+            fontSize: "15px",
+            background: "linear-gradient(269.88deg, #40FF00 1.68%, #16FFA8 86.92%, #00FFFF 112.83%)",
+            boxShadow: "0px 10px 50px rgb(64 255 0 / 30%)",
+            fontFamily: "Montserrat",
+            fontWeight: "500",
+            lineHeight: "37px",
+        },
     }
 });
 
@@ -271,7 +325,7 @@ export default function SectionContact() {
                         <div className="animatedShapeRight"><img src="./images/contactusing-right.png" className={classes.animatedShapeRightImg}></img></div>
                         <h4>Email Us</h4>
                         <img className="animatedShapeBg" src="./images/contactusing-bg.png"></img>
-                        <a href="#" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
+                        <a href="mailto:info@XtaticThought.com" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
                     </div>
                 </div>
                 <div className={classes.contactUsingBox}>
@@ -281,7 +335,7 @@ export default function SectionContact() {
                         <div className="animatedShapeRight"><img src="./images/contactusing-right.png" className={classes.animatedShapeRightImg}></img></div>
                         <h4>Message Us in Facebook</h4>
                         <img className="animatedShapeBg" src="./images/contactusing-bg.png"></img>
-                        <a href="#" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
+                        <a href="https://www.facebook.com/xtatic.thought.5" target="_blanks" className={classes.redirectLink}><img src="./images/right-down.png"></img></a>
                     </div>
                 </div>
             </div>
@@ -317,7 +371,15 @@ export default function SectionContact() {
                                 <div className={classes.footerContainerRight}>
                                     {/* <div className={classes.footerContainerRight} data-aos="fade-left" data-aos-duration="1000"> */}
                                     <h4>Contacts</h4>
-                                    <div className={classes.footerContact}>
+                                    <div className={classes.footerContactUs}>
+                                        <form action="">
+                                            <input type="text" placeholder="Your Name" />
+                                            <input type="email" placeholder="Your Email" />
+                                            <textarea name="" id="" placeholder="write a message" rows="5"></textarea>
+                                            <button type="submit">Contact Us</button>
+                                        </form>
+                                    </div>
+                                    {/* <div className={classes.footerContact}>
                                         <ul>
                                             <li>
                                                 <h6>Email us </h6>
@@ -332,24 +394,24 @@ export default function SectionContact() {
                                                 <a href="#">Address</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                     <h6>Follow us on social media</h6>
                                     <div className={classes.footerSocial}>
                                         <ul>
                                             <li>
-                                                <a href="#"><img src="./images/facebook-icon.png"></img></a>
+                                                <a target="_blank" href="https://www.facebook.com/xtatic.thought.5"><img src="./images/facebook-icon.png"></img></a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="./images/instagram-icon.png"></img></a>
+                                                <a target="_blank" href="https://instagram.com/xtaticthought?utm_medium=copy_link"><img src="./images/instagram-icon.png"></img></a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="./images/twitter-icon.png"></img></a>
+                                                <a target="_blank" href="https://twitter.com/ThoughtXtatic?t=hk6DlV1B6tTp_5TCFc0b1A&s=09"><img src="./images/twitter-icon.png"></img></a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="./images/linkedin-icon.png"></img></a>
+                                                <a target="_blank" href="https://www.linkedin.com/company/xtatic-thought-inc"><img src="./images/linkedin-icon.png"></img></a>
                                             </li>
                                             <li>
-                                                <a href="#"><img src="./images/youtube-icon.png"></img></a>
+                                                <a target="_blank" href="https://youtube.com/channel/UCvSjaAtGSYBFU_ag7ifOQIQ"><img src="./images/youtube-icon.png"></img></a>
                                             </li>
                                         </ul>
                                     </div>

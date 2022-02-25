@@ -100,7 +100,6 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         '@media (max-width: 899px)': {
             flexWrap: "wrap",
-            background: "#000",
         },
         '& a': {
             color: "#ffffff",
@@ -119,13 +118,21 @@ const useStyles = makeStyles((theme) => ({
                 margin: "0 0 0px 0 !important",
                 display: "inline-block",
                 padding: "10px 20px",
-                background: "-webkit-linear-gradient(45deg,  #00FFFF, #40FF00)",
-                "-webkit-background-clip": "text",
-                "-webkit-text-fill-color": "transparent",
-                fontWeight: "bold",
-                borderBottom: "1px solid #40FF00",
+                color: "#000000",
+                fontWeight: "600",
+                borderBottom: "1px solid #ddd",
+                '&:hover': {
+                    background: "transparent",
+                    "-webkit-background-clip": "inherit",
+                    "-webkit-text-fill-color": "inherit",
+                },
             },
         },
+    },
+    mobileHeaderGrid: {
+        '& div:empty': {
+            display: "none",
+        }
     },
     headerGrid: {
         '@media (max-width: 899px)': {
@@ -142,14 +149,15 @@ const useStyles = makeStyles((theme) => ({
         },
         '& > div:nth-child(2)': {
             '@media (max-width: 899px)': {
-                order: 1,
-                background: "black",
-                width: "calc(100% - 40px)",
-                maxWidth: "calc(100% - 40px)",
-                flex: "0 0 calc(100% - 40px)",
-                margin: "10px 20px",
-                padding: "10px 10px !important",
+                flex: "100%",
+                order: "1",
+                width: "100%",
+                margin: "0",
+                padding: "20px 10px !important",
+                maxWidth: "100%",
+                background: "white",
                 lineHeight: "0",
+                borderBottom: "1px solid #ddd",
                 '& a': {
                     display: "inline-block",
                     lineHeight: 0,
@@ -242,10 +250,10 @@ function Header(props: SiteAppBarProps) {
                     [classes.appBarShift]: drawerOpen,
                 })}
             >
-                <Toolbar style={{ justifyContent: 'space-between' }}>
+                <Toolbar style={{ justifyContent: 'space-between' }} className={classes.mobileHeaderGrid}>
                     {mobileView && (
                         <>
-                            <a style={{ lineHeight: 0 }} href="#"><img src="./images/logo.png" alt="..." /></a>
+                            <Link href="/"><a style={{ lineHeight: 0 }}><img src="./images/logo.png" alt="..." /></a></Link>
                             <IconButton
                                 color="inherit"
                                 aria-label="open drawer"
@@ -267,7 +275,7 @@ function Header(props: SiteAppBarProps) {
                         >
                             <div
                                 style={{
-                                    backgroundImage: "-webkit-linear-gradient(45deg,  #00FFFF, #40FF00)",
+                                    background: "#fff",
                                     width: 250,
                                     height: "100%",
                                 }}

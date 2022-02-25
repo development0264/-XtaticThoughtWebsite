@@ -24,7 +24,6 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
-    width: 600,
     height: 400,
     // backgroundColor: theme.palette.background.paper,
     backgroundColor: theme.palette.success.main,
@@ -35,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    width: "calc(100% - 40px)",
+    paddingTop: "60px !important",
+    maxWidth: "600px",
   },
   heading: {
     color: "#ffffff",
@@ -83,8 +85,22 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "10pt",
     borderRadius: 5,
     border: "1px solid #ffff00",
+    padding: "9px 20px",
     textTransform: "capitalize",
   },
+  modelClose: {
+    cursor: "pointer",
+    position: "absolute",
+    right: "10px",
+    top: "10px",
+    padding: 0,
+    background: "transparent",
+    border: "none",
+    '& img': {
+      filter: "brightness(0) invert(1)",
+      width: "25px",
+    }
+  }
 }));
 
 export default function XtaticLabModal(props) {
@@ -102,6 +118,7 @@ export default function XtaticLabModal(props) {
       style={modalStyle}
       className={classNames(classes.paper, classes.mainDivCont)}
     >
+      <button className={classes.modelClose} onClick={handleClose}><img src="./images/close-icon.png"></img></button>
       <h2 className={classes.heading}>
         <i>{strings.SOME_INFORMATION_ABOUT_XTATIC_LABS}</i>
       </h2>
@@ -115,13 +132,14 @@ export default function XtaticLabModal(props) {
       <div className={classes.innerDivCont}>
         <h2 className={classes.innerText}>{strings.SOME_TEXT_HERE}</h2>
 
-        <Button
+        <a
           color="inherit"
           className={classes.btnStyle}
-          onClick={strings.LINK_TO_APK}
+          target="_blank"
+          href="https://drive.google.com/file/d/1hrqrazC7Tj20EBt-9C9WuJIa9AbwJhAd/view?usp=drivesdk"
         >
           {strings.LINK_TO_APK_TEXT}
-        </Button>
+        </a>
       </div>
     </div>
   );
