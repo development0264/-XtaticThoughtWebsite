@@ -23,7 +23,7 @@ export const strings = {
   XTATIC_LAB: "Xtatic Lab",
   LINK_TO_APK_TEXT: "Link to APK",
   LINK_TO_APK:
-    "https://play.google.com/store/books/details/J_K_Rowling_Harry_Potter_and_the_Sorcerer_s_Stone?id=wrOQLV6xB-wC&hl=en&gl=US",
+    "https://drive.google.com/file/d/1hrqrazC7Tj20EBt-9C9WuJIa9AbwJhAd/view?usp=drivesdk",
   XTATIC_ART: "Xtatic Art",
   DASHBOARD: "Dashboard",
   SOME_TEXT_HERE: "Some text here",
@@ -45,7 +45,7 @@ export const strings = {
       name: "skill tree",
       heading: "Skill Tree",
       description:
-        "Customizable Knowledge services: optimize your opportunities, grow & expand skill sets, explore curiosities.",
+        "<span>Customizable Knowledge services:</span> <span>optimize your opportunities</span>, <span>grow & expand skill sets</span>, <span>explore curiosities.</span>",
       image: "./images/service-1.png",
       imagehtml: "<div class='servicesDetailImage-animation-one'><img class='one-part-one' src='./images/service-1-1.png'></img><img class='one-part-two' src='./images/service-1-2.png'></img><img class='one-part-three' src='./images/service-1-3.png'></img><img class='one-part-four' src='./images/service-1-4.png'></img></div>",
     },
@@ -54,7 +54,7 @@ export const strings = {
       name: "XR Authenticate",
       heading: "xr authenticate",
       description:
-        "Personalize experiences, customize accounts, secure data cycles, achieve fast user login and seamless access & security.",
+        "<span>Personalize experiences</span>, <span>customize accounts</span>, <span>secure data cycles</span>, <span>achieve fast user login</span> and <span>seamless access</span> & <span>security.</span>",
       image: "./images/service-2.png",
       imagehtml: "<div class='servicesDetailImage-animation-two'><img class='two-part-one' src='./images/service-2-1.png'></img><img class='two-part-two' src='./images/service-2-2.png'></img></div>",
     },
@@ -63,7 +63,7 @@ export const strings = {
       name: "xr analytics",
       heading: "xr analytics",
       description:
-        "We carefully analyze your data to track event process, save user progress and improve user feedback.",
+        "<span>We carefully</span> <span>analyze your data</span> to <span>track event process</span>, <span>save user progress</span> and <span>improve user feedback</span>.",
       image: "./images/service-3.png",
       imagehtml: "<div class='servicesDetailImage-animation-three'><img class='three-part-one' src='./images/service-3-1.png'></img><img class='three-part-two' src='./images/service-3-2.png'></img><img class='three-part-three' src='./images/service-3-3.png'></img></div>",
     },
@@ -72,7 +72,7 @@ export const strings = {
       name: "Art Services",
       heading: "Art Services",
       description:
-        "Our handcrafted art is produced by expertly-trained artists with tools in cutting edge medium. Our work molds and adapts to serve diverse market cultures.",
+        "<span>Our handcrafted art is</span> <span>produced by</span> <span>expertly-trained artists</span> <span>with tools in</span> <span>cutting edge medium</span>. <span>Our work molds</span> and <span>adapts to serve</span> <span>diverse market cultures</span>.",
       image: "./images/service-4.png",
       imagehtml: "<div class='servicesDetailImage-animation-four'><img class='four-part-one' src='./images/service-4-1.png'></img><img class='four-part-two' src='./images/service-4-2.png'></img></div>",
     },
@@ -81,7 +81,7 @@ export const strings = {
       name: "intelligence",
       heading: "intelligence",
       description:
-        "Infrastructure for content integration - includes Analytics, AI, ML, XRAuth. Our solution ranges on the full spectrum of demands.",
+        "<span>Infrastructure for</span> <span>content integration - includes Analytics</span>, AI, ML, XRAuth. <span>Our solution ranges on the</span> <span>full spectrum of demands.</span>",
       image: "./images/service-5.png",
       imagehtml: "<div class='servicesDetailImage-animation-five'><img class='five-part-one' src='./images/service-5-1.png'></img></div>",
     },
@@ -90,7 +90,7 @@ export const strings = {
       name: "immersive experiences",
       heading: "immersive experiences",
       description:
-        "Limitless utilizes immersive technology and machine learning to teach math and science. Our educational platform is dynamically customizable to each individual to best suit their learning style.",
+        "<span>Limitless utilizes</span> <span>immersive technology</span> and <span>machine learning</span> to <span>teach math and science</span>. <span>Our educational platform</span> is <span>dynamically customizable</span> to <span>each individual</span> to <span>best suit their learning style</span>.",
       image: "./images/service-6.png",
       imagehtml: "<div class='servicesDetailImage-animation-six'><img class='six-part-one' src='./images/service-6-1.png'></img><img class='six-part-two' src='./images/service-6-2.png'></img></div>",
     },
@@ -128,7 +128,7 @@ export const strings = {
       {
         heading: "1 / Skill Tree",
         description:
-          "Customizable Knowledge services: optimize your opportunities, grow & expand skill sets, explore curiosities.",
+          "<span>Customizable Knowledge services:</span> <span>optimize your opportunities</span>, <span>grow & expand skill sets</span>, <span>explore curiosities.</span>",
         image: "./images/service-1.png",
         imagehtml: "<div class='servicesDetailImage-animation-one'><img class='one-part-one' src='./images/service-1-1.png'></img><img class='one-part-two' src='./images/service-1-2.png'></img><img class='one-part-three' src='./images/service-1-3.png'></img><img class='one-part-four' src='./images/service-1-4.png'></img></div>",
       },
@@ -137,7 +137,7 @@ export const strings = {
       {
         heading: "2 / xr authenticate",
         description:
-          "Personalize experiences, customize accounts, secure data cycles, achieve fast user login and seamless access & security.",
+          "<span>Personalize experiences</span>, <span>customize accounts</span>, <span>secure data cycles</span>, <span>achieve fast user login</span> and <span>seamless access</span> & <span>security.</span>",
         image: "./images/service-2.png",
         imagehtml: "<div class='servicesDetailImage-animation-two'><img class='two-part-one' src='./images/service-2-1.png'></img><img class='two-part-two' src='./images/service-2-2.png'></img></div>",
       },
@@ -146,7 +146,7 @@ export const strings = {
       {
         heading: "3 / xr analytics",
         description:
-          "We carefully analyze your data to track event process, save user progress and improve user feedback.",
+          "<span>We carefully</span> <span>analyze your data</span> to <span>track event process</span>, <span>save user progress</span> and <span>improve user feedback</span>.",
         image: "./images/service-3.png",
         imagehtml: "<div class='servicesDetailImage-animation-three'><img class='three-part-one' src='./images/service-3-1.png'></img><img class='three-part-two' src='./images/service-3-2.png'></img><img class='three-part-three' src='./images/service-3-3.png'></img></div>",
       },
@@ -155,7 +155,7 @@ export const strings = {
       {
         heading: "4 / Art Services",
         description:
-          "Our handcrafted art is produced by expertly-trained artists with tools in cutting edge medium. Our work molds and adapts to serve diverse market cultures.",
+          "<span>Our handcrafted art is</span> <span>produced by</span> <span>expertly-trained artists</span> <span>with tools in</span> <span>cutting edge medium</span>. <span>Our work molds</span> and <span>adapts to serve</span> <span>diverse market cultures</span>.",
         image: "./images/service-4.png",
         imagehtml: "<div class='servicesDetailImage-animation-four'><img class='four-part-one' src='./images/service-4-1.png'></img><img class='four-part-two' src='./images/service-4-2.png'></img></div>",
       },
@@ -164,7 +164,7 @@ export const strings = {
       {
         heading: "5 / intelligence",
         description:
-          "Infrastructure for content integration - includes Analytics, AI, ML, XRAuth. Our solution ranges on the full spectrum of demands.",
+          "<span>Infrastructure for</span> <span>content integration - includes Analytics</span>, AI, ML, XRAuth. <span>Our solution ranges on the</span> <span>full spectrum of demands.</span>",
         image: "./images/service-5.png",
         imagehtml: "<div class='servicesDetailImage-animation-five'><img class='five-part-one' src='./images/service-5-1.png'></img></div>",
       },
@@ -173,7 +173,7 @@ export const strings = {
       {
         heading: "6 / immersive experiences",
         description:
-          "Limitless utilizes immersive technology and machine learning to teach math and science. Our educational platform is dynamically customizable to each individual to best suit their learning style.",
+          "<span>Limitless utilizes</span> <span>immersive technology</span> and <span>machine learning</span> to <span>teach math and science</span>. <span>Our educational platform</span> is <span>dynamically customizable</span> to <span>each individual</span> to <span>best suit their learning style</span>.",
         image: "./images/service-6.png",
         imagehtml: "<div class='servicesDetailImage-animation-six'><img class='six-part-one' src='./images/service-6-1.png'></img><img class='six-part-two' src='./images/service-6-2.png'></img></div>",
       },

@@ -357,6 +357,10 @@ const teamStyle = (theme) => ({
     fontSize: "18px",
     lineHeight: "30px",
     fontFamily: "Montserrat",
+    "& span": {
+      display: "inline-block",
+      whiteSpace: "nowrap",
+    },
     '@media (max-width: 991px)': {
       fontSize: "16px",
     },
@@ -672,7 +676,7 @@ function HowWeHelp(props) {
                         <div dangerouslySetInnerHTML={{ __html: item.imagehtml }} />
                       </div>
                       <h4 className={classes.servicesDetailTitle}>{item.heading}</h4>
-                      <p className={classes.servicesDetailText}>{item.description}</p>
+                      <p className={classes.servicesDetailText} dangerouslySetInnerHTML={{ __html: item.description }}></p>
                     </div>
                   </div>
                   <img className="serviceBg" src="./images/service-bg.png"></img>
@@ -725,7 +729,7 @@ function HowWeHelp(props) {
                       <div dangerouslySetInnerHTML={{ __html: item.imagehtml }} />
                     </div>
                     <h4 className={classes.servicesDetailTitle}>{item.heading}</h4>
-                    <p className={classes.servicesDetailText}>{item.description}</p>
+                    <p className={classes.servicesDetailText} dangerouslySetInnerHTML={{ __html: item.description }}></p>
                   </div>
                 ))}
               </div>
